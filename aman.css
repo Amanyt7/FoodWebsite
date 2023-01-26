@@ -1,0 +1,257 @@
+/* if you want to reset you css then type *{ } then write here what you want to reset. EXAMPLE is given below  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Making navbar Beautiful */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-family: sans-serif;
+    top: 0px;
+
+}
+
+#logo3 {
+    height: 60px;
+    margin: 10px 34px;
+}
+
+#logo img {
+    margin: 10px 10px;
+    height: 50px;
+}
+/* How to make scrolling smooth, If you want then type  */
+html{
+    scroll-behavior: smooth;
+}
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Now working on Home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    /* If your image is repeting and not fit in size then use this given below  */
+    background: url('background3.webp') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.h-primary {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+.h-primary center {
+    color: black;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    padding: 6px 15px;
+    border: 3px solid rgb(182, 180, 60);
+    background-color: orange;
+    color: black;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    padding: 8px 20px;
+    border: 3px solid white;
+    color: rgb(95, 14, 95);
+    background-color: rgb(9, 199, 9);
+}
+
+.h-secondary {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.1rem;
+    padding: 12px;
+}
+
+/* Now we are working on services section  */
+#services {
+    margin: 15px;
+    display: flex;
+}
+
+#services .box {
+    border: 3px solid rgba(216, 11, 11, 0.541);
+    padding: 10px;
+    margin: 22px 10px;
+    border-radius: 30px;
+    background-color: rgb(245, 234, 215);
+    text-align: center;
+    justify-content: center;
+}
+
+#services .box p {
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.black {
+    color: black;
+    margin-top: 2px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* client section  */
+#client-section {
+    
+}
+
+#ciient-section::before {
+    content: "";
+    position: absolute;
+    background: url('logo.webp') no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 160px;
+
+}
+
+.client-item {
+    padding: 40px;
+}
+
+.m {
+    color: rgb(179, 15, 151);
+}
+
+/* Contact section  */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('Contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+#contact-box form {
+    width: 30%;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+    font-family: Verdana, sans-serif;
+}
+
+.form-group {
+    font-weight: bold;
+}
+
+.blue {
+    color: rgb(9, 9, 182);
+}
+
+/* If you want to center any element then use this properties  */
+.footer {
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+/* How to make any website Responsive, Now we are going to see this topic. EXAMPLE is in Phone.CSS File */

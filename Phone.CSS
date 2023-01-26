@@ -1,0 +1,49 @@
+/* How to convert any website into Responsive Website.  */
+/* Navigation Section work  */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+/* Home section work  */
+
+#home{
+height: 370px;
+padding: 3px 68px;
+}
+#home::before{
+    height: 460px;
+}
+#home p{
+    font-size: 13px;
+}
+/* Services section work  */
+#services{
+ flex-direction: column;
+}
+#services .box{
+padding: 14px;
+margin: 2px 0px;
+}
+/* Client section work  */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 66px;
+    padding: px px;
+}
+/* Contact Section Work  */
+
+/* Footer section work  */
+
+/* Utility Classes work  */
+.h-primary{
+    font-size: 26px;
+}
+.btn{
+    font-size: 26px;
+    padding: 4px 8px;
+}
